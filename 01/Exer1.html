@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercício 1</title>
+  </head>
+  <body>
+    <script>
+      var endereco = {
+        rua: "Rui Barbosa 880",
+        numero: 880,
+        bairro: "Zona 07",
+        cidade: "Maringá PR",
+        uf: "PR",
+      };
+      function formatadorEndereco(end) {
+        return (
+          "Endereço" +
+          end.cidade +
+          " / " +
+          end.uf +
+          ", Bairro " +
+          end.bairro +
+          ", Rua " +
+          end.rua +
+          " Número " +
+          end.numero +
+          "."
+        );
+      }
+      console.log(formatadorEndereco(endereco));
+    </script>
+  </body>
+</html>

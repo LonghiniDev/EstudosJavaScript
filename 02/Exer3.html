@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercicio MOD 2</title>
+  </head>
+  <body>
+    <ul></ul>
+
+    <script>
+      var nomes = ["Diego", "Gabriel", "Lucas"];
+      var listaElement = document.querySelector("ul");
+
+      for (nome of nomes) {
+        var liElment = document.createElement("li");
+        var textElement = document.createTextNode(nome);
+        liElment.appendChild(textElement);
+        listaElement.appendChild(liElment);
+      }
+    </script>
+  </body>
+</html>
